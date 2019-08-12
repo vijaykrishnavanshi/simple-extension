@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "simple-extension",
+    "version": "1.0",
+
+    "description": "Our very first browser extension!",
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.dev.to/*"],
+            "js": ["simple-extension.js"]
+        }
+    ]
+}
